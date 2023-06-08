@@ -65,6 +65,12 @@ section:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: start;
+}
+section:nth-child(3){
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
     border-bottom: 1px white solid;
 }
 section .container{
@@ -81,7 +87,7 @@ section h2{
 }
 section .text-container{
     display: flex;
-    background-color: antiquewhite;
+    background-color: white;
     border-radius: 10px;
 }
 section .text-container .text-box{
@@ -136,18 +142,7 @@ section .text-container .text-box ul li{
     section .text-container{
         flex-direction: column;
     }
-}
 
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-}
-
-.reveal.active{
-    transform: translateY(0);
-    opacity: 1;
 }
 
 .reveal0{
@@ -162,7 +157,35 @@ section .text-container .text-box ul li{
     opacity: 1;
 }
 
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal2{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal2.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .copyrigth{
     text-align: center;
     font-weight: lighter;
+}
+.scrolldowntext{
+    margin-top: 10%;
+    text-align: center;
 }
