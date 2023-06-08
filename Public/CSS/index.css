@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 *{
+    font-weight: bold;
     margin: 0;
     padding: 0;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    color: white;
+}
+::selection{
+    color: black;
+    background-color: white;
 }
 html{
     width: 100%;
@@ -14,14 +21,148 @@ body{
     width: 100%;
     height: 100%;
 }
-.container{
+.container-header{
+    position: relative;
     font-size: 20px;
-    width: 100%;
+    width: 90%;
 }
-#header{
+.container-contain{
+    position:fixed;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+}
+#logo{
     margin-left: 10px;
 }
-#globe{
+#globe {
     height: 40px;
-    width: 40px;
+    width: 38px;
+    position: relative;
+    animation: globe 3s infinite;
+}
+
+@keyframes globe {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+section{
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(1){
+    align-items: start;
+    color: #e0ffff;
+}
+section:nth-child(2){
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-bottom: 1px white solid;
+}
+section .container{
+    margin: 100px;
+}
+section h1{
+    font-size: 3rem;
+    margin: 20px;
+}
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section .text-container{
+    display: flex;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+section .text-container .text-box{
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    background:gray;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 ;
+}
+section .about .text-container .text-box h3{
+    text-transform: unset;
+    color: white;
+    text-align: left;
+}
+section .about .text-container .text-box h3 span{
+    color: black;
+}
+section .about .text-container img{
+    width: 400px;
+    height:400px;
+    margin: 10px
+}
+section .text-container .text-box .images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+section .text-container .text-box .images img{
+    width: 100px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 100%;
+    border: inset 5px darkcyan;
+}
+section .text-container .text-box h3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 10px;
+}
+section .text-container .text-box ul li{
+     font-size: 20px;
+ }
+@media (max-width: 900px){
+    section h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    section .text-container{
+        flex-direction: column;
+    }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal0{
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal0.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.copyrigth{
+    text-align: center;
+    font-weight: lighter;
 }
