@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-*{
+*,
+*::before,
+*::after {
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -9,6 +11,7 @@
     bottom: 0;
     color: white;
 }
+
 p{
     color: black;
     font-size: 20px;
@@ -125,6 +128,7 @@ section .text-container .text-box .images{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 section .text-container .text-box .images img{
     width: 100px;
@@ -141,9 +145,6 @@ section .text-container .text-box h3{
     color: black;
     margin-bottom: 10px;
 }
-section .text-container .text-box ul li{
-     font-size: 20px;
- }
 @media (max-width: 900px){
     section h1{
         font-size: 2rem;
