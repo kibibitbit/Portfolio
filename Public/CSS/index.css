@@ -9,6 +9,11 @@
     bottom: 0;
     color: white;
 }
+p{
+    color: black;
+    font-size: 20px;
+    padding-top: 40px;
+}
 ::selection{
     color: black;
     background-color: white;
@@ -20,6 +25,9 @@ html{
 body{
     width: 100%;
     height: 100%;
+}
+main{
+    cursor: pointer;
 }
 .container-header{
     position: relative;
@@ -64,6 +72,7 @@ section:nth-child(2){
     color: white;
     display: flex;
     justify-content: center;
+    margin-top: -150px;
     align-items: start;
 }
 section:nth-child(3){
@@ -71,6 +80,7 @@ section:nth-child(3){
     display: flex;
     justify-content: center;
     align-items: start;
+    margin-top: -150px;
     border-bottom: 1px white solid;
 }
 section .container{
@@ -167,6 +177,7 @@ section .text-container .text-box ul li{
 .reveal.active{
     transform: translateY(0);
     opacity: 1;
+    cursor: pointer;
 }
 
 .reveal2{
@@ -177,10 +188,9 @@ section .text-container .text-box ul li{
 }
 
 .reveal2.active{
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
 }
-
 .copyrigth{
     text-align: center;
     font-weight: lighter;
@@ -188,4 +198,19 @@ section .text-container .text-box ul li{
 .scrolldowntext{
     margin-top: 10%;
     text-align: center;
+}
+#projects .reveal2 .text-container{
+    height: 100%;
+}
+#projects .reveal2 .text-container .text-box{
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+#projects .reveal2 .text-container .text-box .project{
+    width: 100%;
+}
+#projects .reveal2 .text-container .text-box .project img{
+    width: 100%;
+    border-radius: 10px;
 }
